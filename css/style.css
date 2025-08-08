@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+}
+
+/* BANNER CAROUSEL */
+.carousel-caption {
+    right: 6vw;
+    top: 13vw;
+    left: 50vw;
+    text-align: right;
+  }
+
+.title{
+    font-size: 7.5rem;
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(14, 11, 11, 0.322);
+}
+
+.display-3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+.text-red {
+    color: rgb(222, 52, 52);
+}
+
+.text-green {
+    color: rgb(55, 160, 41);
+}
+
+/* RESPONSIVIDADE LAPTOP */
+@media (max-width: 1024px){
+
+    /* BARRA DE NAVEGAÇÃO */
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-brand img {
+        height: 7.5rem;
+    }
+
+    .nav-item {
+        font-size: 0.8rem;
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .nav-item:hover{
+        color: rgb(222, 52, 52);
+    }
+
+    /* BANNER CAROUSEL */
+    .display-3 {
+        font-size: 2.5rem;
+    }   
+
+    .title{
+        font-size: 4.5rem;
+        margin: 0;
+        line-height: 1;
+        text-shadow: 0.5rem 0.5rem 0.5rem rgba(14, 11, 11, 0.322);
+    }
+
+    .lead {
+        font-size: 1.3rem;
+    }
+}
+
+/* RESPONSIVIDADE TABLET */
+@media (max-width: 768px){
+
+    /* BARRA DE NAVEGAÇÃO */
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-brand img {
+        height: 5.5rem;
+    }
+
+    .nav-item {
+        font-size: 0.6rem;
+        padding-right: 0.2rem !important;
+        padding-left: 0.2rem !important;
+    }
+
+    .nav-item:hover{
+        color: rgb(222, 52, 52);
+    }
+
+    /* BANNER CAROUSEL */
+
+
+    .display-3 {
+        font-size: 2rem;
+    }   
+
+    .title{
+        font-size: 3.5rem;
+        margin: 0;
+        line-height: 1;
+        text-shadow: 0.5rem 0.5rem 0.5rem rgba(14, 11, 11, 0.322);
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
