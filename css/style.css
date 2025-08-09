@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* BARRA DE NAVEGAÇÃO */
-.navbar {
-}
+
 
 /* BANNER CAROUSEL */
 .carousel-caption {
@@ -13,15 +12,19 @@
     text-align: right;
   }
 
+  .carousel-item {
+    transition: transform 0.2s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
 .title{
-    font-size: 7.5rem;
+    font-size: 6rem;
     font-family: "Libre Baskerville", serif;
     margin: 0;
     line-height: 1;
     text-shadow: 0.5rem 0.5rem 0.5rem rgba(14, 11, 11, 0.322);
 }
 
-.display-3 {
+.display-5 {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
