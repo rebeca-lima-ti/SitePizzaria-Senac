@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Casabella</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
-        integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS do AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -37,9 +39,9 @@
                         <a class="nav-link" href="contato.html">CONTATO</a>
                     </li>
                     <li class="nav-item dropdown px-4">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            LINKS
+                            OUTROS
                         </a>
                         <ul class="dropdown-menu fw-light">
                             <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
@@ -87,7 +89,7 @@
     </section>
 
     <!-- QUEM SOMOS -->
-    <section id="quem_somos" class="my-5 py-5">
+    <section id="quem_somos" data-aos="fade-up" data-aos-duration="20" class="my-5 py-5">
         <div class="container text-center my-5 py-5 px-4 px-md-5 card shadow align-items-center">
             <h5 class="text-red mt-3">BEM VINDO!</h5>
             <h1 class="pb-2">NÓS SOMOS A CASABELLA</h1>
@@ -103,14 +105,14 @@
     </section>
 
     <!-- CARDAPIO -->
-    <section id="cardapio" class="container-fluid mt-5 text-center">
+    <section id="cardapio" class="container mt-5 text-center bg-body-tertiary">
         <div class="row">
-            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+            <div class="carta col-md-5 col-sm-6 col-lg-3 mx-auto">
                 <div class="my-4 p-3 px-3">
                     <img class="img-fluid px-5 py-4 img-pizza" src="img/cardapio/pizza_pepperoni.png">
                     <div class="text-center mt-3">
                         <h5>PEPERONI ESPECIAL DA CASA</h5>
-                        <p class="text-normal">Molho de tomate caseiro, fatias de peperoni, mussarela derretida, fatias de tomate, tiras de pimentão verde, azeitonas pretas e toque final de orégano fresco.</p>
+                        <p class="text-normal">Molho de tomate caseiro, fatias de peperoni, mussarela derretida, tomate, pimentão verde, azeitonas pretas e um toque de orégano.</p>
                         <div class="row">
                             <div class="col"><hr></div>
                             <div class="col-auto pt-1 px-0 fw-medium"><p>Tamanhos</p></div>
@@ -139,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+            <div class="carta col-md-5 col-sm-6 col-lg-3 mx-auto">
                 <div class="my-4 p-3 px-3">
                     <img class="img-fluid px-5 py-4 img-pizza" src="img/cardapio/pizza_vegetariana.png">
                     <div class="text-center mt-3">
@@ -173,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+            <div class="carta col-md-5 col-sm-6 col-lg-3 mx-auto">
                 <div class="my-4 p-3 px-3">
                     <img class="img-fluid px-5 py-4 img-pizza" src="img/cardapio/pizza_marguerita.png">
                     <div class="text-center mt-3">
@@ -207,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+            <div class="carta col-md-5 col-sm-6 col-lg-3 mx-auto">
                 <div class="my-4 p-3 px-3">
                     <img class="img-fluid px-5 py-4 img-pizza" src="img/cardapio/pizza_italiana.png">
                     <div class="text-center mt-3">
@@ -245,7 +247,7 @@
     </section>
 
     <!-- INGREDIENTES -->
-    <section id="ingredientes" class="my-5 py-5">
+    <section id="ingredientes" data-aos="zoom-in" class="my-5 py-5">
         <div class="container text-center my-5 py-5 px-4 px-md-5 align-items-center">
             <h1 class="pb-2">&#128308; NOSSOS INGREDIENTES! &#128308;</h1>
             <div class="row">
@@ -268,6 +270,77 @@
         </div>
     </section>
 
+    <!-- SLIDDER -->
+    <section id="slidder">
+        <div class="container my-5 bg-body-tertiary">
+            <!-- Usar o GRID do Bootstrap -->
+            <div class="row">
+                <!-- Primeiro card -->
+                <div class="slidder col-6 col-lg-3 text-center py-5 px-0">
+                    <img class="img-slidder" src="img/slider/pizza_pb.svg">
+                    <h5 class="mt-3 fw-semibold">Pizzas</h5>
+                    <p class="texto-normal px-1 px-sm-3 px-md-5">Nossas pizzas são fermentadas naturalmente e preparadas ingredientes frescos. Sabores clássicos e autorais para todos os gostos.</p>
+                </div>
+                <div class="slidder col-6 col-lg-3 text-center py-5 px-0">
+                    <img class="img-slidder" src="img/slider/burger_pb.svg">
+                    <h5 class="mt-3 fw-semibold">Burguers</h5>
+                    <p class="texto-normal px-1 px-sm-3 px-md-5">Hambúrgueres suculentos, feitos com carne de qualidade e acompanhamentos irresistíveis. Uma explosão de sabor em cada mordida.</p>
+                </div>
+                <div class="slidder col-6 col-lg-3 text-center py-5 px-0">
+                    <img class="img-slidder" src="img/slider/beer_pb.svg">
+                    <h5 class="mt-3 fw-semibold">Cerveja Artesanal</h5>
+                    <p class="texto-normal px-1 px-sm-3 px-md-5">Seleção especial de cervejas artesanais para harmonizar com seu prato. Rótulos locais e nacionais que surpreendem.</p>
+                </div>
+                <div class="slidder col-6 col-lg-3 text-center py-5 px-0">
+                    <img class="img-slidder" src="img/slider/omelette_pb.svg">
+                    <h5 class="mt-3 fw-semibold">Breakfast</h5>
+                    <p class="texto-normal px-1 px-sm-3 px-md-5">Comece o dia com nosso café da manhã completo: pães, sucos, cafés e opções saudáveis. Sabor e energia logo cedo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="container text-center my-5 py-5 px-4 px-md-5 align-items-center">
+            <h5 class="text-red mt-3">VENHA CONFERIR!</h5>
+            <h1 class="pb-2">NOSSO BLOG</h1>
+            <img class="flag py-3" src="img/logotipos/italy.png">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2">
+                <div class="blog">
+                    <div class="my-3 p-3 px-3">
+                        <img class="img-blog img-fluid" src="img/blog/img_1.jpg">
+                        <p class="card-title text-green text-start p-3 ps-4">02 OUT 2022</p>
+                        <h4 class="card-text ps-4 text-start">Área da padaria renovada. Muito mais luz natural enquanto você aprecia seu cafézinho!</h4>
+                        <h6 class="card-footer fw-light fst-italic text-start ps-4 pt-3">por Rafael Sette</h6>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="my-3 p-3 px-3">
+                        <img class="img-blog img-fluid" src="img/blog/img_2.jpg">
+                        <p class="card-title text-green text-start p-3 ps-4">30 AGO 2022</p>
+                        <h4 class="card-text text-start ps-4">Novos sabores de pães, folhados, biscoitos e vários outras de nossas famosas massas. Venha conferir!</h4>
+                        <h6 class="card-footer fw-light fst-italic text-start ps-4 pt-3">por Enzo Gabriel</h6>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="my-3 p-3 px-3">
+                        <img class="img-blog img-fluid" src="img/blog/img_3.jpg">
+                        <p class="card-title text-green text-start p-3 ps-4">14 JUN 2022</p>
+                        <h4 class="card-text text-start ps-4">Atendimento de qualidade e com todo o carinho para você sair daqui com um sorriso no rosto e a barriga cheia!</h4>
+                        <h6 class="card-footer fw-light fst-italic text-start ps-4 pt-3">por João Vitor Moura</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="z-index: 102;" class="position-fixed end-0 bottom-0 m-4">
+        <a href="#" class="btn text-danger fs-1">
+            <i class="fa-regular fa-circle-up"></i>
+        </a>
+    </div>
+
     <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
     <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
@@ -289,10 +362,14 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
-        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/script.js"></script>
+    <!-- JavaScript do AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript do FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js" integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
